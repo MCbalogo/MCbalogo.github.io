@@ -10,7 +10,7 @@
 
 /* Hero Section */
 .hero {
-    background-image: src('kyoto.jpg');
+    background-image: src="kyoto.jpg" alt="Kyoto Project;
     background-size: cover;
     background-position: center;
     color: white;

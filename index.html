@@ -12,7 +12,7 @@
                   url('https://www.transparenttextures.com/patterns/light-paper.png');
       background-size: cover;
       background-attachment: fixed;
-      color: #333; /* Change text color for better readability */
+      color: #333;
     }
 
     .navbar {
@@ -50,29 +50,42 @@
 
     .project-card {
       background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      padding: 20px;
       margin: 10px;
       text-align: center;
       position: relative;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
       flex: 1 1 calc(45% - 20px);
       max-width: 200px;
+      border: 2px solid #3f5c7a;
     }
 
     .project-card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h4 {
+      font-size: 1.2rem;
+      color: #3f5c7a;
+    }
+
+    .project-card p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 0;
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .skills-section {
+    .skills-section, .about-section, .contact-section {
       background-color: rgba(240, 240, 240, 0.9);
       padding: 20px;
       border-radius: 5px;
@@ -95,29 +108,28 @@
 
     .profile-info {
       text-align: center;
-      margin-left: 20px; /* Space between image and text */
+      margin-left: 20px;
     }
 
     .profile-name {
-      font-size: 1.8rem; /* Larger font size for the name */
-      font-weight: bold; /* Bold font weight */
+      font-size: 1.8rem;
+      font-weight: bold;
     }
 
     .profile-course {
-      font-size: 1.2rem; /* Slightly larger font for the course */
-      color: #555; /* Grey color for course */
-      margin-bottom: 5px; /* Spacing below course */
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 5px;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
       .project-card {
         flex: 1 1 calc(100% - 20px);
       }
 
       .profile-info {
-        text-align: center; /* Center align on small screens */
-        margin-left: 0; /* Remove left margin */
+        text-align: center;
+        margin-left: 0;
       }
     }
   </style>
@@ -161,29 +173,34 @@
           <p class="profile-year">3-1</p>
         </div>
       </div>
-        <div class="button-container mt-4">
-    <div class="project-card">
-        <a href="Project1/kyoto.html" target="_blank">
+      <div class="button-container mt-4">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <a href="Project1/kyoto.html" target="_blank">
             <img src="kyoto.jpg" alt="Kyoto Project">
             <h4>Project 1: Kyoto, Japan</h4>
             <p>Discover the beauty and tradition of Japan’s ancient capital.</p>
-        </a>
-    </div>
+          </a>
+        </div>
+        <!-- Project 2 -->
         <div class="project-card">
           <img src="https://example.com/project2.jpg" alt="Project 2">
           <h4>Project 2</h4>
           <p>Project 2 Description</p>
         </div>
+        <!-- Project 3 -->
         <div class="project-card">
           <img src="https://example.com/project3.jpg" alt="Project 3">
           <h4>Project 3</h4>
           <p>Project 3 Description</p>
         </div>
+        <!-- Project 4 -->
         <div class="project-card">
           <img src="https://example.com/project4.jpg" alt="Project 4">
           <h4>Project 4</h4>
           <p>Project 4 Description</p>
         </div>
+        <!-- Project 5 -->
         <div class="project-card">
           <img src="https://example.com/project5.jpg" alt="Project 5">
           <h4>Project 5</h4>
@@ -193,11 +210,13 @@
     </div>
   </div>
 
+  <!-- About Section -->
   <section id="about-section" class="about-section mt-5">
     <h2>About Me</h2>
     <p>I'm currently a student at Polytechnic University of the Philippines taking Diploma in Information Technology. This webpage is for my project in Mobile Application Development.</p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills-section" class="skills-section mt-5">
     <h2>Skills</h2>
     <ul>
@@ -207,14 +226,14 @@
     </ul>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact-section" class="contact-section mt-5">
     <h2>Contact</h2>
     <p><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/icons/envelope.svg" alt="Email icon"> christianbalogo7@gmail.com</p>
     <p><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/icons/telephone.svg" alt="Phone icon"> 09504322652</p>
-    <p><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/icons/geo-alt-fill.svg" alt="Location icon"> Tanauan City, Batangas</p>
+    <p><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/icons/geo-alt-fill.svg" alt="Location icon"> Tanauan, Batangas</p>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

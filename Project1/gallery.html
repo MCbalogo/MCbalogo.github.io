@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        /* Gallery image styles */
+        .gallery-img {
+            width: 100%;
+            /* Ensure images take full column width */
+            height: 300px;
+            /* Set fixed height */
+            object-fit: cover;
+            /* Ensures the image covers the area without distortion */
+            border-radius: 8px;
+            /* Slight border radius for rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Smooth transition for the 3D effect */
+        }
+
+        /* 3D Effect on hover */
+        .gallery-img:hover {
+            transform: scale(1.1) translateY(-10px);
+            /* Slight zoom and lift effect */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            /* Add shadow for depth */
+        }
+        h2 {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kyoto, Japan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="kyoto.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sites.html">Famous Sites</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Gallery Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">Photo Gallery</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="Images/Cherry Blossoms in Kyoto.jpeg" class="img-fluid gallery-img"
+                    alt="Cherry Blossoms in Kyoto">
+            </div>
+            <div class="col-md-4">
+                <img src="Images/temple in snow.jpeg" class="img-fluid gallery-img" alt="Temple in Snow">
+            </div>
+            <div class="col-md-4">
+                <img src="Images/autumn in kyoto.jpeg" class="img-fluid gallery-img" alt="Kyoto in Autumn">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Kyoto | Designed by MCOB</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

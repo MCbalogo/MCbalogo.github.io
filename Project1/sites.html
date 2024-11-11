@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Sites in Kyoto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        /* Card image size and effect */
+        .card-img-top {
+            height: 250px;
+            /* Fixed height for images */
+            object-fit: cover;
+            /* Ensures the images fill the area without distortion */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for 3D effect */
+            border-radius: 8px 8px 0 0;
+            /* Rounded corners on top */
+        }
+
+        /* 3D effect on hover */
+        .card-img-top:hover {
+            transform: scale(1.1) translateY(-5px);
+            /* Slight zoom and lift effect */
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            /* Add shadow for depth */
+        }
+
+        /* Card Body Style */
+        .card-body {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Card Styling */
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            /* Light shadow for cards */
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Card Hover Effect */
+        .card:hover {
+            transform: translateY(-5px);
+            /* Lift card on hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            /* Slightly bigger shadow */
+        }
+
+        /* Title Styling */
+        .card-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Text Styling */
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* General Layout Styling */
+        .container {
+            max-width: 1200px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kyoto, Japan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="kyoto.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sites.html">Famous Sites</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sites Section -->
+    <div class="container">
+        <h2 class="text-center">Famous Sites in Kyoto</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Images/Fushimi Inari Shrine.jpeg" class="card-img-top" alt="Fushimi Inari Shrine">
+                    <div class="card-body">
+                        <h5 class="card-title">Fushimi Inari Shrine</h5>
+                        <p class="card-text">Known for its iconic red torii gates, Fushimi Inari is one of Kyoto’s most
+                            famous shrines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Images/Kinkaku-ji (Golden Pavilion).jpeg" class="card-img-top" alt="Kinkaku-ji Temple">
+                    <div class="card-body">
+                        <h5 class="card-title">Kinkaku-ji (Golden Pavilion)</h5>
+                        <p class="card-text">This Zen temple is known for its stunning golden leaf exterior, reflected
+                            in the surrounding pond.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Images/Arashiyama Bamboo Grove.jpeg" class="card-img-top" alt="Arashiyama Bamboo Grove">
+                    <div class="card-body">
+                        <h5 class="card-title">Arashiyama Bamboo Grove</h5>
+                        <p class="card-text">A mesmerizing bamboo forest located in the Arashiyama district, perfect for
+                            a peaceful walk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5">
+        <p>&copy; 2024 Kyoto | Designed by MCOB</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

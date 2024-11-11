@@ -1,0 +1,44 @@
+/* Global 3D Effect */
+.card, .gallery-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .gallery-img:hover {
+    transform: translateY(-10px) rotate(5deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/kyoto.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gallery */
+.gallery-img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .gallery-img {
+        height: 200px;
+    }
+}

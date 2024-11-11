@@ -6,20 +6,6 @@
 .card:hover, .gallery-img:hover {
     transform: translateY(-10px) rotate(5deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('Images/kyoto.jpeg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Gallery */
 .gallery-img {

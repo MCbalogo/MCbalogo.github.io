@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('map.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* Softer shadow for better readability */
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffffff; /* Ensure the title is white */
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #485988; /* Light cyan/teal color to complement the blue tones */
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0077cc; /* Darker blue when hovered */
+            transform: scale(1.1); /* Slight scale effect for button hover */
+        }
+
+        .button:focus {
+            outline: none; /* Removes the default focus outline */
+            box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.5); /* Focus effect with a glowing border */
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Reduce heading size on smaller screens */
+            }
+
+            .button {
+                padding: 12px 25px; /* Smaller button on mobile */
+                font-size: 1.1em; /* Smaller font size on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em; /* Further reduce heading size for very small screens */
+            }
+
+            .button {
+                padding: 10px 20px; /* Smaller padding on very small screens */
+                font-size: 1em; /* Even smaller font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Discover every country in the world</h1>
+        <button class="button" onclick="window.location.href='index.html';">Explore Now</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* General styles */
+#oopss {
+    background: linear-gradient(-45deg, #568acf, #568acf);
+    position: fixed;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5em;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#oopss #error-text {
+    font-size: 20px;  /* Reduced font size for a smaller appearance */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Shabnam", Tahoma, sans-serif;
+    color: #000;
+    direction: rtl;
+    text-align: center;
+    max-width: 80%;  /* Reduced max-width to make the content more compact */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#oopss #error-text img {
+    margin: 0 auto 15px;
+    height: 25vmin;  /* Smaller image size */
+    max-width: 100%;
+}
+
+#oopss #error-text span {
+    position: relative;
+    font-size: 2.5em;  /* Smaller font size for the title */
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#oopss #error-text p.p-a {
+    font-size: 16px;  /* Smaller description font size */
+    margin: 10px 0 5px 0;
+}
+
+#oopss #error-text p.p-b {
+    font-size: 14px;  /* Reduced size for secondary text */
+}
+
+#oopss #error-text .back {
+    background: #fff;
+    color: #000;
+    font-size: 20px;  /* Smaller font size for button text */
+    text-decoration: none;
+    margin: 10px auto 0;
+    padding: 0.8em 2em;  /* Smaller padding for the button */
+    border-radius: 500px;
+    box-shadow: 0 10px 30px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #3a5f7e;
+    font-weight: 900;
+    transition: all 300ms ease;
+    text-transform: uppercase;
+}
+
+/* On hover */
+#oopss #error-text .back:hover {
+    transform: translateY(-8px);  /* Less dramatic hover effect */
+    box-shadow: 0 20px 60px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #000;
+}
+
+/* Optionally, add focus and active states for accessibility */
+#oopss #error-text .back:focus,
+#oopss #error-text .back:active {
+    outline: 3px solid #fff300;
+    box-shadow: 0 20px 60px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #fff300;
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: Shabnam;
+    src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot");
+    src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff")
+        format("woff"),
+      url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff2")
+        format("woff2"),
+      url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.ttf")
+        format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot");
+    src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff")
+        format("woff"),
+      url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff2")
+        format("woff2"),
+      url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.ttf")
+        format("truetype");
+    font-weight: normal;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    #oopss #error-text {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #oopss #error-text img {
+        height: 20vmin;  /* Adjusted image size for mobile */
+    }
+
+    #oopss #error-text span {
+        font-size: 2.2em;  /* Reduced size of title */
+        margin-bottom: 15px;
+    }
+
+    #oopss #error-text p.p-a {
+        font-size: 14px;  /* Smaller font for description */
+    }
+
+    #oopss #error-text p.p-b {
+        font-size: 12px;  /* Smaller font for secondary text */
+    }
+
+    #oopss #error-text .back {
+        font-size: 18px;  /* Smaller font for button */
+        padding: 0.6em 1.5em;
+    }
+}
+
+/* Smaller devices, like phones */
+@media (max-width: 480px) {
+    #oopss #error-text {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #oopss #error-text img {
+        height: 18vmin;  /* Further reduced image size */
+    }
+
+    #oopss #error-text span {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    #oopss #error-text p.p-a {
+        font-size: 12px;
+    }
+
+    #oopss #error-text p.p-b {
+        font-size: 10px;
+    }
+
+    #oopss #error-text .back {
+        font-size: 16px;  /* Even smaller font for button */
+        padding: 0.5em 1em;
+    }
+}
